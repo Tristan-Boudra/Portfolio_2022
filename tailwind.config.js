@@ -6,7 +6,11 @@ module.exports = {
     './public/index.html',
 ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        moderat: ["Moderat", "sans-serif"],
+      },
+    },
   },
   plugins: [],
 }

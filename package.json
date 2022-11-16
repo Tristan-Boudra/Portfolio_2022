@@ -10,5 +10,8 @@
   "license": "ISC",
   "devDependencies": {
     "postcss": "^8.4.18"
+  },
+  "dependencies": {
+    "particles.js": "^2.0.0"
   }
 }
