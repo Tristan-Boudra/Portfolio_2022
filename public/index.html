@@ -4,115 +4,149 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../dist/output.css" rel="stylesheet">
+    <link href="srtyle.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
     <title>Portfolio</title>
 </head>
-<body class="m-1.5 font-adelia">
+<body class="m-4 font-adelia scroll-smooth">
     <div class="bg-gray-200">
         <header>
-            <div id="particles-js">
-                <nav class="flex flex-row p-2 px-10 justify-between">
-                    <div><img src="../src/images/logo.svg" class="w-12 h-12" alt=""></div>
-                    <div><img src="../src/images/hamburger.svg" class="w-12 h-12" alt=""></div>
-                </nav>
-                <section class="">
-                    <!-- <img src="../src/images/Tristan.png" class="h-96 m-auto mt-16 grayscale rounded-lg" alt=""> -->
-                    <!-- <div class="w-1/3 h-96 bg-red-200 m-auto mt-16">image</div> -->
-                    <div class="m-auto text-center mt-9">
-                        <h1 class="text-3xl">Boudra Tristan</h1>
-                        <h2 class="tracking-widest">DEVELOPPEUR WEB • LYON</h2>
-                    </div>
-                </section>
-            </div>
+            <nav class="flex flex-row p-2 px-10 justify-between">
+                <div><img src="../src/images/logo.svg" class="w-12 h-12" alt=""></div>
+                <!-- <div><img src="../src/images/hamburger.svg" class="w-12 h-12" alt=""></div> -->
+            </nav>
+            <section class="">
+                <!-- <img src="../src/images/Tristan.png" class="h-96 m-auto mt-16 grayscale rounded-lg" alt=""> -->
+                <div class="w-1/3 h-96 bg-white m-auto mt-16">image</div>
+                <div class="m-auto text-center mt-9 bg-aqua">
+                    <h1 class="lg:text-6xl font-bold">Boudra Tristan</h1>
+                    <h1 class="lg:tracking-[.25em]">DEVELOPPEUR WEB • LYON</h2>
+                </div>
+            </section>
         </header>
         <section>
-            <article class="my-32 min-h-screen">
-                <h1 class="font-medium text-2xl ml-5 tracking-wide sticky top-0 z-10 p-5">A propos de moi</h1>
-                <p class="w-2/3 m-auto">Titulaire d'un BTS SIO option SLAM, je suis actuellement en troisième année de Bachelor Développeur web et mobile à MydigitalSchool à Lyon. Je réalise cette formation en alternance au sein de l'entreprise Codiceo en tant que Développeur Web.<br></p>
-                <!-- <div class="bg-white w-80 h-20"></div> -->
+            <article class="my-32 min-h-screen relative z-[1]">
+                <h2 class="font-[600] text-xl lg:text-4xl ml-5 tracking-wide sticky top-0 p-5 w-80 rounded backdrop-blur-sm z-[2]">A propos de moi</h1>
+                <img src="../src/images/circle.svg" class="w-28 h-28 absolute top-0 right-1/3 transform ease-in-out duration-200 hover:translate-y-3" alt="">
+                <img src="../src/images/circle.svg" class="w-24 h-24 absolute top-15 right-1/3 transform ease-in-out duration-200 hover:translate-y-3" alt="">
+                <div class="my-64 relative z-[1]">
+                    <p class="w-2/3 m-auto">Titulaire d'un BTS SIO option SLAM, je suis actuellement en troisième année de Bachelor Développeur web et mobile à MydigitalSchool à Lyon. Je réalise cette formation en alternance au sein de l'entreprise Codiceo en tant que Développeur Web.</p>
+                    <p class="w-2/3 m-auto mt-10">Dans la vie en dehors de l'informatique je suis un passionné de sport notemment le cyclisme que je pratique depuis tout petit. J'aime également tout se qui s'approche aux nouvelles technologies, au domaine spatiale.</p>
+                    <p class="w-2/3 m-auto mt-10">Mes compétences techniques sont les suivantes:</p>
+                    <ul class="flex flex-row flex-wrap w-2/3 m-auto gap-2 mt-10 justify-center">
+                        <li class="bg-[#E96228] p-1 rounded transition duration-500 hover:-translate-y-1">Html</li>
+                        <li class="bg-[#0367BA] p-1 rounded transition duration-500 hover:-translate-y-1 text-white">Css</li>
+                        <li class="bg-[#EFD81D] p-1 rounded transition duration-500 hover:-translate-y-1">JavaScript</li>
+                        <li class="bg-[#7377AD] p-1 rounded transition duration-500 hover:-translate-y-1 text-white">Php</li>
+                        <li class="bg-[#3EB27F] p-1 rounded transition duration-500 hover:-translate-y-1">VueJs</li>
+                        <li class="bg-[#1D73B6] p-1 rounded transition duration-500 hover:-translate-y-1 text-white">Asp.Net</li>
+                        <li class="bg-[#96488D] p-1 rounded transition duration-500 hover:-translate-y-1 text-white">C#</li>
+                        <li class="bg-[#36B6F0] p-1 rounded transition duration-500 hover:-translate-y-1">Tailwind</li>
+                        <li class="bg-[#0370A3] p-1 rounded transition duration-500 hover:-translate-y-1 text-white">Wordpress</li>
+                        <li class="bg-[#2C1E75] p-1 rounded transition duration-500 hover:-translate-y-1 text-white">Oxygen</li>
+                        <li class="bg-[#7751C0] p-1 rounded transition duration-500 hover:-translate-y-1 text-white">WooCommerce</li>
+                        <li class="bg-[#F1931B] p-1 rounded transition duration-500 hover:-translate-y-1">MySql</li>
+                    </ul>
+                </div>
+                <div class="absolute bg-white w-44 h-16 lg:w-80 lg:h-20 backdrop-blur-sm left-10 top-72 transform ease-in-out duration-200 hover:translate-x-8 rounded"></div>
             </article>
             <article class="my-44 min-h-screen">
-                <h1 class="font-medium text-2xl ml-5 tracking-widest sticky top-0 z-10 p-5">Mes projets</h1>
-                <ul class="flex flex-row flex-wrap justify-center">
-                    <li class="p-5 w-96">
-                        <div class="">
-                            <img src="../src/images/covoit.png" class="rounded-md" alt="">
-                            <!-- <p></p> -->
+                <h2 class="font-[600] text-xl lg:text-4xl ml-5 tracking-wide sticky top-0 p-5 w-80 rounded backdrop-blur-sm z-[1]">Mes projets</h1>
+                <ul class="flex flex-row flex-wrap justify-center my-64 gap-20">
+                    <li class="p-10 w-96 my-auto">
+                        <div class="relative">
+                            <a href="https://covoit.erwan-decoster.com/"><img src="../src/images/covoit.png" class="w-auto h-40 mx-auto rounded-md" alt=""></a>
+                            <p class="absolute left-1/2 -translate-x-1/2 p-3 w-11/12 my-auto"><span class="font-bold">Projet:</span> Covoit</br><span class="font-bold">Technologies:</span> VueJs, Php, Tailwind</p>
                         </div>
                     </li>
-                    <li class="p-5 w-96">
-                        <div>
-                            <img src="../src/images/covoit.png" class="rounded-md" alt="">
-                            <!-- <p></p> -->
+                    <li class="p-5 w-96 my-auto">
+                        <div class="relative">
+                            <a href=""><img src="../src/images/CovoitAdmin.webp" class="w-auto h-40 mx-auto rounded-md" alt=""></a>
+                            <p class="absolute left-1/2 -translate-x-1/2 p-3 w-11/12 my-auto"><span class="font-bold">Projet:</span> CovoitAdmin</br><span class="font-bold">Technologies:</span> ASP.Net, C#</p>
                         </div>
                     </li>
-                    <li class="p-5 w-96">
-                        <div>
-                            <img src="../src/images/covoit.png" class="rounded-md" alt="">
-                            <!-- <p></p> -->
+                    <li class="p-5 w-96 my-auto">
+                        <div class="relative">
+                            <a href=""><img src="../src/images/portfolio.webp" class="w-auto h-40 mx-auto rounded-md" alt=""></a>
+                            <p class="absolute left-1/2 -translate-x-1/2 p-3 w-11/12 my-auto"><span class="font-bold">Projet:</span> Portfolio</br><span class="font-bold">Technologies:</span> VueJs, Tailwind</p>
+                        </div>
+                    </li>
+                    <li class="p-5 w-96 my-auto">
+                        <div class="relative">
+                            <a href="https://www.projet-kathekon.com/"><img src="../src/images/kathekon.webp" class="w-auto h-32 mx-auto rounded-md" alt=""></a>
+                            <p class="absolute left-1/2 -translate-x-1/2 p-3 w-11/12 my-auto"><span class="font-bold">Projet:</span> Kathekon</br><span class="font-bold">Technologies:</span> Wordpress, Oxygen</p>
+                        </div>
+                    </li>
+                    <li class="p-5 w-96 my-auto">
+                        <div class="relative">
+                            <a href=""><img src="../src/images/vmAutomation.webp" class="w-auto h-40 mx-auto rounded-md" alt=""></a>
+                            <p class="absolute left-1/2 -translate-x-1/2 p-3 w-11/12 my-auto"><span class="font-bold">Projet:</span> VMAutomation</br><span class="font-bold">Technologies:</span> Wordpress, Oxygen</p>
                         </div>
                     </li>
                 </ul>
-                <!-- <div class="bg-white w-80 h-20 top-0"></div> -->
             </article>
             <article class="my-32 min-h-screen">
-                <h1 class="font-medium text-2xl ml-5 tracking-widest sticky top-0 z-10 p-5">Mes expériences</h1>
-                <div class="flex flex-row w-3/4 m-auto justify-between py-10">
-                    <img src="../src/images/codiceo.svg" class="w-72 h-56 drop-shadow-xl rounded" alt="">
-                    <div class="w-2/3">
-                        <p class="mt-16">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                <h2 class="font-[600] text-xl lg:text-4xl ml-5 tracking-wide sticky top-0 p-5 w-96 rounded backdrop-blur-sm z-[1]">Mes expériences</h1>
+                <div class="flex flex-col md:flex-row w-3/4 m-auto justify-between py-10">
+                    <img src="../src/images/codiceo.svg" class="w-auto h-32 md:w-72 md:h-56 drop-shadow-xl rounded" alt="">
+                    <div class="w-2/3 mx-auto text-center my-auto">
+                        <p class="">Codiceo est une entreprise réalisant des logiciels SaaS, site web, application web sur-mesure en fonction des besoins des clients.</p>
+                        <p>J'apporte mon aide en réalisant la création de nouvelles fonctionnalitées sur les logicielles.</p>
                     </div>
                 </div>
-                <div class="flex flex-row w-3/4 m-auto justify-between py-10">
-                    <div class="w-2/3">
-                        <p class="mt-16 text-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                <div class="flex flex-col-reverse md:flex-row w-3/4 m-auto justify-between py-10">
+                    <div class="w-2/3 mx-auto text-center my-auto mt-10">
+                        <p class="">Web at Heart est une agence de communication Web et digitale 360° spécialisée dans le design et la création de site web sur mesure. Ils vous accompagnent dans vos différents projets de communication Web et numérique. Ils développent vos outils Web et établissent votre stratégie web et digitale au sein de leur Agence Digitale à Lyon.</p>
+                        <p class="">J'y es pu accompagner différents clients sur leur projet de réalisation ou de la refont de leur site web.</p>
                     </div>
-                    <img src="../src/images/web_at_heart.webp" class="bg-white w-72 h-hauto drop-shadow-xl rounded" alt="">
+                    <img src="../src/images/web_at_heart.webp" class="bg-white w-auto h-32 md:w-72 md:h-hauto drop-shadow-xl rounded my-auto" alt="">
                 </div>
-                <div class="flex flex-row w-3/4 m-auto justify-between py-10">
-                    <img src="../src/images/brogieux.jpeg" class="bg-white w-72 h-56 drop-shadow-xl rounded" alt="">
-                    <div class="w-2/3">
-                        <p class="mt-16">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                <div class="flex flex-col md:flex-row w-3/4 m-auto justify-between py-10">
+                    <img src="../src/images/brogieux.jpeg" class="bg-white w-auto h-32 md:w-72 md:h-56 drop-shadow-xl rounded" alt="">
+                    <div class="w-2/3 mx-auto text-center my-auto mt-10">
+                        <p class="">Les Jardins de Brogieux est une ancienne ferme forte datant du XVIIème siècle.</p>
+                        <p>J'y est pu réaliser toute leur communication sur leur site internet par rapport aux différents évènements qui y on eu lieu: concert, les rendrez-vous aux jardons, les journées du patrimoines.</p>
                     </div>
                 </div>
             </article>
         </section>
         <footer class="pt-36 min-h-screen">
-            <ul class="flex flex-row justify-evenly">
-                <li>
-                    <h1 class="font-medium">Projet</h1>
+            <ul class="flex flex-col md:flex-row justify-evenly text-center gap-10">
+                <li class="">
+                    <h3 class="font-medium">Projet</h1>
                     <div>
                         <ul class="flex flex-col mt-20 text-sm">
-                            <li class="mb-6">Projet 1</li>
-                            <li class="mb-6">Projet 2</li>
-                            <li class="mb-6">Projet 3</li>
+                            <li class="mb-6">Covoit</li>
+                            <li class="mb-6">Covoit C#</li>
+                            <li class="mb-6">Portfolio 2021</li>
                         </ul>
                     </div>
                 </li>
                 <li>
-                    <h1 class="font-medium">Contact</h1>
+                    <h3 class="font-medium">Contact</h1>
                     <div>
                         <ul class="flex flex-col mt-20 text-sm">
-                            <li class="mb-6">Mail</li>
-                            <li class="mb-6">Téléphone 2</li>
+                            <li class="mb-6">boudratristan@gmailcom</li>
+                            <li class="mb-6">07.77.11.71.98</li>
                         </ul>
                     </div>
                 </li>
                 <li>
-                    <h1 class="font-medium">Expériences</h1>
+                    <h3 class="font-medium">Expériences</h1>
                     <div>
                         <ul class="flex flex-col mt-20 text-sm">
-                            <li class="mb-6">Expérience 1</li>
-                            <li class="mb-6">Expérience 2</li>
-                            <li class="mb-6">Expérience 3</li>
+                            <li class="mb-6">Codiceo</li>
+                            <li class="mb-6">Web At Heart</li>
+                            <li class="mb-6">Les Jardons de Brogieux</li>
+                            <li class="mb-6">Kathekon</li>
+                            <li class="mb-6">VMAutomation</li>
                         </ul>
                     </div>
                 </li>
             </ul>
-            <h3 class="text-sm text-center mt-28 tracking-widest">BOUDRA TISTAN • DEVELOPPEUR WEB</h3>
+            <h3 class="text-sm text-center mt-28 tracking-widest">BOUDRA TRISTAN • DEVELOPPEUR WEB</h3>
         </footer>
     </div>
-    <script rel="stylesheet" src="particles.js"></script>
-    <script rel="stylesheet" src="app.js"></script>
 </body>
 </html>
